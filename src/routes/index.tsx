@@ -1,9 +1,12 @@
-import { Switch, BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import App from '../App';
 
 const Router = () => {
   return (
     <BrowserRouter>
-      <Switch>{/* <Route path="/" exact={} /> */}</Switch>
+      <Switch>
+        <Route path="/" component={App} />
+      </Switch>
     </BrowserRouter>
   );
 };
